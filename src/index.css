@@ -1,0 +1,12 @@
+body {
+    display:flex;
+    flex-flow:column;
+    min-height:100vh;
+    min-width:300px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#content {
+    flex: 1;
+}
