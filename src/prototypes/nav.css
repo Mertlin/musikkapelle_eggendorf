@@ -4,6 +4,10 @@
     margin: 0px;
     font-family: 'Lato', sans-serif;
 } */
+a {
+    text-decoration: none;
+    color:white;
+}
 
 #nav-wrapper {
     font-family: 'Roboto', sans-serif;
@@ -42,6 +46,12 @@
     border-left: 2px groove white;
     border-image: linear-gradient(0deg,  #2E2E2E 25%, white 25%,white 75%, #2E2E2E 75%);
     border-image-slice: 1;
+    text-decoration: none;
+}
+
+.nav-links:visited {
+    text-decoration:none;
+    color:white;
 }
 
 #nav-burger {

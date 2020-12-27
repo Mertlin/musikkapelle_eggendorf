@@ -10,3 +10,8 @@ body {
 #content {
     flex: 1;
 }
+
+#showcase-image {
+    max-width: 100vw;
+    padding: 50px 200px;
+}
