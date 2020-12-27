@@ -59,8 +59,7 @@ body {
     display: none;
     flex-flow: column;
     text-align: center;
-    border-left: 2px groove white;
-    border-bottom: 2px groove white;
+    box-shadow: -1px 1px 2px 3px  rgba(0,0,0,0.3);
 }
 
 .nav-dd-links {
@@ -68,8 +67,11 @@ body {
     padding: 5px 0px;
     color: white;
     background-color: #2E2E2E;
-    border-bottom: 1px groove #5B5B5B;
+    border-bottom: 2px groove white;
+    border-image: linear-gradient(90deg,  #2E2E2E 15%, white 15%,white 85%, #2E2E2E 85%);
+    border-image-slice: 1;
 }
+
 
 @media screen and (max-width: 900px) {
     .nav-links { display: none; }

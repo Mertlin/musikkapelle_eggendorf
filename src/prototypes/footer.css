@@ -1,0 +1,12 @@
+body {
+    min-width:300px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#footer-links-wrapper{
+    display: flex;
+    background-color: #2E2E2E;
+    width: 100%;
+    justify-content: center;
+}
