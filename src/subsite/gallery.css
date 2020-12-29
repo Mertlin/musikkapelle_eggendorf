@@ -1,0 +1,35 @@
+#gallery {
+
+    display: flex;
+    flex-flow:column;
+    min-height: 800px;
+    min-width: 450px;
+    width: 80vw;
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.gallery-entry{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery-entry-img{
+    padding: 30px;
+}
+
+.gallery-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+#expandedImg{
+    max-width: 1600px;
+    max-height: 900px;
+    padding:10px;
+}
