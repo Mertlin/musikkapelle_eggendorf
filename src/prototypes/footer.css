@@ -1,9 +1,3 @@
-/* body {
-    min-width:300px;
-    margin: 0px;
-    font-family: 'Lato', sans-serif;
-}
- */
 #footer-wrapper {
     display:flex;
     flex-flow: row;

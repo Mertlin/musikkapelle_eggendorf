@@ -1,0 +1,30 @@
+body {
+    display:flex;
+    flex-flow:column;
+    min-height:1250px;/* Doomed */
+    min-width:300px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #F5F1EE;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+h1, p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.active{
+    background-color: #5B5B5B;
+    color: white;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

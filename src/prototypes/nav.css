@@ -20,15 +20,11 @@ a {
     margin-right: auto;
     position: absolute;
     padding: 5px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav-links:hover{
     background: #5B5B5B;
-}
-
-.active{
-    background-color: #5B5B5B;
 }
 
 .nav-links{
@@ -57,9 +53,11 @@ a {
     flex-flow: column;
     text-align: center;
     box-shadow: -1px 1px 2px 3px  rgba(0,0,0,0.3);
+    z-index:2;
 }
 
 .nav-dd-links {
+    position: relative;
     width: 100vw;
     padding: 5px 0px;
     color: white;
