@@ -9,7 +9,9 @@ function showSidebar() {
     else {
         s.style.display = 'flex';
         ssArrow.style.transform = "rotate(180deg)";
-    }    
+    }
+    
+    
 }
 
 function select(className) {
@@ -32,6 +34,7 @@ function select(className) {
 
 function back() {
     var backArrow = document.getElementById('se-back');
+    var active = document.getElementsByClassName('active');
     var toShow = document.getElementsByClassName('sidebar-entry');
     var toHide = document.getElementsByClassName('sidebar-sub');
     
