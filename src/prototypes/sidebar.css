@@ -9,7 +9,7 @@
     left: 0;
     top: 150px;
     flex-flow: column;
-    width: 450px;
+    width: 350px;
     background-color: white;
     border-radius: 0px 10px 10px 0px;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
@@ -17,6 +17,7 @@
     animation-name: slide;
     animation-duration: 0.2s;
     animation-direction: alternate;
+    z-index:1;
 }
 
 .sidebar-entry {
@@ -30,12 +31,14 @@
 }
 
 #se-back {
+    box-sizing: border-box;
     display:none;
-    height: 30px;
+    height: 70px;
     padding: 20px 15px;
     position: absolute;
     right: 0;
     transform: rotate(180deg);
+    z-index: 1;
 }
 
 #sidebar-slider {
@@ -77,9 +80,8 @@
 
     #sidebar-slider {
         position: absolute;
-        top: 150px;
         left: 0;
-        padding: 25px 3px;
+        padding: 26.5px 3px;
         display:flex;
         justify-content: space-between;
         background-color: #2E2E2E;
@@ -98,5 +100,17 @@
         display:none;
     }
 }
+
+@media screen and (max-width: 650px) {
+
+    #sidebar {
+        top: 90px;
+    }
+
+    #sidebar-slider {
+        top: 90px;
+    }
+}
+
 
 
