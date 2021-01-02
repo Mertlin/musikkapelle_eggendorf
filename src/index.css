@@ -48,3 +48,8 @@
     margin-top: auto;
     background-color:rgba(0, 0, 0, 0.2);
 }
+
+
+@media screen and (max-width: 450px) {
+    .showcase-article {width: 90vw; font-size: 4vw;}
+}

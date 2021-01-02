@@ -25,8 +25,10 @@ function select(className) {
         toShow[i].style.display = 'block';
     }
     backArrow.style.display = 'block';
-    toShow[0].classList.add("active");
-    toShow[0].classList.add("active-border");
+    if (!toShow[0].classList.contains("active")) {
+        toShow[0].classList.add("active");
+        toShow[0].classList.add("active-border");
+    }
 }
 
 
@@ -37,12 +39,13 @@ function back() {
     var toHide = document.getElementsByClassName('sidebar-sub');
     
     backArrow.style.display = 'none';
-    //active[0] --> nav-list
-    active[1].classList.remove("active-border");
-    active[1].classList.remove("active");    
-
     for( i = 0; i < toShow.length;i++){
         toShow[i].style.display = 'block';
+    }
+    for( i = 0; i < toShow.length;i++){
+        toShow[i].style.display = 'block';
+        toShow[i].classList.remove("active-border");
+        toShow[i].classList.remove("active");    
     }
 
     for( i = 0; i < toHide.length;i++){

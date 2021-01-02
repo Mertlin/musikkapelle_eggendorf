@@ -38,6 +38,7 @@ a {
 }
 
 #nav-burger {
+    box-sizing: content-box;
     height: 20px;
     display:none;
 }
