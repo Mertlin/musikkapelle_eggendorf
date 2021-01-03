@@ -74,4 +74,17 @@ function back() {
             toShowContent[i].style.display = 'block';
         }
     }
+
+    /* Nur für Mitglieder */
+    var toShowHeader = document.getElementsByClassName('mitglied-header');
+    var toShowPhoto = document.getElementsByClassName('mitglied');
+
+    for( i = 0; i < toShowHeader.length; i++){
+        toShowHeader[i].style.display = 'flex';
+    }
+
+    for( i = 0; i < toShowPhoto.length; i++){
+        toShowPhoto[i].style.display = 'flex';
+    }
+
 }

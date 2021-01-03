@@ -1,0 +1,127 @@
+/* Content Mods */
+#content {
+    display:flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items:flex-start;
+    padding-top: 76px;
+}
+
+#mitglieder-wrapper {
+    display:flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+#mitglieder-container {   
+    display:flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: nowrap; 
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 1000px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);	 
+    overflow:hidden;
+}
+
+.mitglied-header {
+    display: flex;
+    border-bottom: 3px groove white;
+    border-image: linear-gradient(90deg, #2E2E2E 00%, #2E2E2E 80%, white 90%);
+    border-image-slice: 1;
+    width: 100%;
+}
+
+.mitglieder-text {
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    padding: 10px 15px;
+    background-color: rgba(0,0,0,0.4);
+    font-weight: normal;
+}
+
+
+.mitglied {
+    display:flex;
+    position:relative;
+    width: 250px;
+    z-index: 0;
+    overflow: hidden;  
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2); 
+    margin: 25px; 
+    font-size: smaller;
+}
+
+.titel h1 {
+    line-height: 50%;
+}
+
+/* Sidebar mods */
+#sidebar {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    top: 0px;
+    margin-right: 50px;
+}
+
+#se-back {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    #content {
+        flex-flow: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+
+    #mitglieder-container {   
+        display:flex;
+        flex-flow: column;
+    }
+
+    #sidebar {
+        display: none;
+        padding: 0px;
+        position: absolute;
+        top: 150px;
+        margin-right: 0px;
+    }
+        
+    #sidebar-slider {
+        display:block;
+    }
+
+    #se-back {
+        margin-right: 0px;
+    }
+
+} 
+
+@media screen and (max-width: 1000px) {
+
+    #mitglieder-container {   
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        width: 90%;
+        padding: 30px;
+    }
+} 
+
+@media screen and (max-width: 555px) {
+
+    .mitglieder-container {
+        padding: 30px;
+        width: 100%;
+    }
+} 
