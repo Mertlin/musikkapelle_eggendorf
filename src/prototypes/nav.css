@@ -77,5 +77,5 @@ a {
 @media screen and (max-width: 1000px) {
     .nav-links { display: none; }
     #nav-burger { display: block; }
-    #nav-logo {width: 30vw; min-width: 170px; max-width: 250px;}
 }
+

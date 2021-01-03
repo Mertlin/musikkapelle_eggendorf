@@ -100,7 +100,9 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+
+/* Not really needed lokks bettwer without */
+/* @media screen and (max-width: 650px) {
 
     #sidebar {
         top: 90px;
@@ -109,7 +111,7 @@
     #sidebar-slider {
         top: 90px;
     }
-}
+} */
 
 
 

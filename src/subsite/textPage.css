@@ -12,5 +12,5 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .text-container{ width: 100%; }
+    .text-container{ width: 90%; }
 }

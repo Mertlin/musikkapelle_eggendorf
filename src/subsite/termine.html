@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="../prototypes/footer.css">
         <link rel="stylesheet" href="../prototypes/sidebar.css">
         <link rel="stylesheet" href="../prototypes/site.css">
-        <link rel="stylesheet" href="termine.css">
         <link rel="stylesheet" href="textPage.css">
+        <link rel="stylesheet" href="termine.css">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
@@ -25,7 +25,6 @@
                     <a href="../index.html"><div class="nav-links">Home</div></a>
                     <a href="gallery.html"><div class="nav-links">Galerie</div></a>
                     <a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>
-                    <a href="geschichte.html"><div class="nav-links">Geschichte</div></a>
                     <a href="mitglieder.html"><div class="nav-links">Mitglieder</div></a>
                     <a href="termine.html"><div class="nav-links">Termine</div></a>
                     <a href="beitraege.html"><div class="nav-links">Beiträge</div></a>
@@ -35,7 +34,6 @@
                             <a href="../index.html"><div class="nav-dd-links" class="active">Home</div></a>
                             <a href="gallery.html"><div class="nav-dd-links">Galerie</div></a>
                             <a href="jugendarbeit.html"><div class="nav-dd-links">Jugendarbeit</div></a>
-                            <a href="geschichte.html"><div class="nav-dd-links">Geschichte</div></a>
                             <a href="mitglieder.html"><div class="nav-dd-links">Mitglieder</div></a>
                             <a href="termine.html"><div class="nav-dd-links">Termine</div></a>
                             <a href="beitraege.html"><div class="nav-dd-links" style="border: none">Beiträge</div></a>
@@ -49,15 +47,20 @@
             <div id="sidebar">
                 <img id="se-back" src="../prototypes/images/rechter-pfeil.png" alt="Pfeil Zurück" onclick="back()"/>
                 <div class="sidebar-entry 2021" onclick="select('2021')">2021</div>
+                <div class="sidebar-entry 2020" onclick="select('2020')">2020</div>
             </div>
 
             <div id="termine-container">
+                <!-- Termin Header -->
+                <h1 class="termin-header aktuell">Aktuell</h1>
+                <h1 class="termin-header 2021">2021</h1>
+                <h1 class="termin-header 2020">2020</h1>
                 <!-- Termin 1 -->
-                <div class="termin" id="31.12.2020">
+                <div class="termin aktuell 2021" id="31.12.2021">
                     <div class="datum">
                         <div class="tag">31.</div>
                         <div class="monat">12.</div>
-                        <div class="jahr">2020</div>
+                        <div class="jahr">2021</div>
                     </div>
                     <div class="titel">
                         <h1>Prototype Termin</h1>
@@ -69,10 +72,26 @@
                 </div>   
                 
                 <!-- Termin 2 -->
-                <div class="termin" id="31.12.2020">
+                <div class="termin aktuell 2020" id="31.12.2020">
                     <div class="datum">
                         <div class="tag">31.</div>
                         <div class="monat">12.</div>
+                        <div class="jahr">2020</div>
+                    </div>
+                    <div class="titel">
+                        <h1>Prototype Termin</h1>
+                        <p>24:00 Ort des Termins</p>
+                    </div>
+                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="showBeschreibung(1)" onmouseout="hideBeschreibung(1)">
+                    <div class="flex-break"></div>
+                    <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
+                </div>  
+
+                <!-- Termin 3 -->
+                <div class="termin 2020" id="1.1.2020">
+                    <div class="datum">
+                        <div class="tag">1.</div>
+                        <div class="monat">1.</div>
                         <div class="jahr">2020</div>
                     </div>
                     <div class="titel">
