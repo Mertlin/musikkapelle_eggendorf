@@ -1,3 +1,5 @@
+html{display:block;}
+
 #showcase-image-wrapper {
     display: flex;
     width: 100%;
