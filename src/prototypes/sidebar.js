@@ -33,7 +33,7 @@ function select(className) {
         toShow[0].classList.add("active-border");
     }
 
-    /* Hide aktuelle Beiträge oder Termine (nur für Beitraege.html)*/
+    /* Hide aktuelle Beiträge oder Termine (nur für beitraege/beitraege.html)*/
     var toHideContent = document.getElementsByClassName('aktuell');
     for( i = 0; i < toHideContent.length;i++){
         if (!toHideContent[i].classList.contains(className))
