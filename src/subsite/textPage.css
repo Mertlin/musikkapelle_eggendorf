@@ -14,3 +14,7 @@
 @media screen and (max-width: 1000px) {
     .text-container{ width: 90%; }
 }
+
+@media screen and (max-width: 550px) {
+    .text-container{ width: 100%; }
+}
