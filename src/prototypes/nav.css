@@ -43,6 +43,10 @@ a {
     display:none;
 }
 
+#dd:hover #nav-dd-wrapper{
+    display:flex;
+}
+
 #nav-dd-wrapper {
     position: absolute;
     right: 0px;
