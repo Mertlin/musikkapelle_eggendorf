@@ -1,36 +1,3 @@
-/* Content Mods */
- #gallery {   
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    flex: nowrap; 
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 50px;
-    width: 1000px;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 1px 2px 4px rgba(0,0,0,.4);	 
-    overflow:hidden;
-} 
-
-#gallery-entry{
-    display: flex;
-    flex-flow: row wrap;
-    /* align-items: center; */
-    justify-content: space-around;
-} 
-
-.gallery-entry-img {
-    display:flex;
-    position:relative;
-    width: 250px;
-    z-index: 0;
-    overflow: hidden;  
-    border-radius: 10px;
-    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2); 
-    margin: 25px; 
-    font-size: smaller;
-}
 
 .gallery-header {
     display: flex;
@@ -40,10 +7,38 @@
     width: 100%;
 }
 
+#gallery-wrapper{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}  
+
+.gallery-container{
+    display:flex;
+    flex-flow: column;
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 20px;
+    width: 1040px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);	 
+    overflow:hidden;
+}
+
+.gallery-entry-img {
+    display: none;
+    position: relative;
+    width: 450px;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+}
+
 /* .gallery-img{
     display: none;
     justify-content: space-around;
-}  */
+}   */
 
 /* #expandedImg{
      max-width: 1366px;
@@ -81,22 +76,42 @@
     transform: rotate(180deg);
 } */
 
-/* .show{
+ .show{
     display: flex;
-} */
+} 
 
 .titel h1 {
     line-height: 50%;
 }
 
- @media screen and (max-width: 1500px) {
-    #expandedImg{ max-width: 1024px;
-                  max-height: 768px;
-                } 
-    #gallery-buttons { top: 350px;}         
+@media screen and (max-width: 1300px) {
+
+    #content {
+        flex-flow: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+
+} 
+
+@media screen and (max-width: 1000px) {
+    #gallery-wrapper{ 
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .gallery-container{
+        width: 95%;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    #expandedImg{ display: none;} 
-    #gallery-buttons { display: none;}
+@media screen and (max-width: 600px) {
+    
+    .gallery-container img {
+        max-width: 100%;
+    }
+
+    .gallery-entry-img{
+        max-width: 95%;
+    }
 } 

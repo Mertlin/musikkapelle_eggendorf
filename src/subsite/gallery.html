@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="../prototypes/footer.css">
         <link rel="stylesheet" href="../prototypes/sidebar.css">
         <link rel="stylesheet" href="../prototypes/site.css">
-        <link rel="stylesheet" href="../subsite/gallery.css">
+        <link rel="stylesheet" href="gallery.css">
 
         <script defer src="../prototypes/sidebar.js"></script>
         <script defer src="../subsite/gallery.js"></script>
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
@@ -57,26 +58,44 @@
                 <div class="sidebar-entry 2018" onclick="select('2018')">2018</div>
                 <div class="sidebar-entry sidebar-sub 2019" onclick="selectEvent('2019','Maiblasen')">Maiblasen</div>
                 <div class="sidebar-entry sidebar-sub 2018" onclick="selectEvent('2018','Herbstblasen')">Herbstblasen</div>
-            </div>
+            </div> 
 
             <!--PHOTOS-->
-            <div id="gallery">
-                <div class="gallery-img">
+            <div class="gallery-container">
+                <!-- <div class="gallery-img">
                     <img id="gallery-button-left" class="gallery-buttons-img" src="../prototypes/images/rechter-pfeil.png" onclick="plusSlide(-1)">
                     <img id="expandedImg" src="../subsite/images/references/Herbstblasen/HB1.jpg">
                     <img id="gallery-button-right" class="gallery-buttons-img" src="../prototypes/images/rechter-pfeil.png" onclick="plusSlide(1)">
-                </div>
-                <div class="gallery-entry">
+                </div>  -->
+                <div id="gallery-wrapper">
+
                     <h1 class="gallery-header Herbstblasen">Herbstblasen</h1>
-                    <div class="gallery-entry-img 2018 Herbstblasen show"> <img src="../subsite/images/references/Herbstblasen/HB1-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> </div>
-                    <div class="gallery-entry-img 2018 Herbstblasen show"> <img src="../subsite/images/references/Herbstblasen/HB2-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(2)"> </div>
-                    <div class="gallery-entry-img 2018 Herbstblasen show"> <img src="../subsite/images/references/Herbstblasen/HB3-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(3)"> </div>
-                    <h1 class="gallery-header Maiblasen">Maiblasen</h1>
-                    <div class="gallery-entry-img 2019 Maiblasen">    <img src="../subsite/images/references/Maiblasen/IMG-20190429-WA0002-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> </div>
-                    <div class="gallery-entry-img 2019 Maiblasen">    <img src="../subsite/images/references/Maiblasen/MaibWalter-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(2)"> </div>
-                    <div class="gallery-entry-img 2019 Maiblasen">    <img src="../subsite/images/references/Maiblasen/MaibFrühstückWalter-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(3)"> </div>
-                    <div class="gallery-entry-img 2019 Maiblasen">    <img src="../subsite/images/references/Maiblasen/MaibamHänger-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(4)"> </div>
-                    <div class="gallery-entry-img 2019 Maiblasen">    <img src="../subsite/images/references/Maiblasen/IMG_20190501_104027-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(5)"> </div>
+                    <div class="gallery-entry-img 2018 Herbstblasen show"> 
+                        <img src="../subsite/images/references/Herbstblasen/HB1-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> 
+                    </div>
+                    <div class="gallery-entry-img 2018 Herbstblasen show"> 
+                        <img src="../subsite/images/references/Herbstblasen/HB2-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(2)"> 
+                    </div>
+                    <div class="gallery-entry-img 2018 Herbstblasen show"> 
+                        <img src="../subsite/images/references/Herbstblasen/HB3-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(3)"> 
+                    </div>
+
+                    <!-- <h1 class="gallery-header Maiblasen">Maiblasen</h1> -->
+                    <div class="gallery-entry-img 2019 Maiblasen">    
+                        <img src="../subsite/images/references/Maiblasen/IMG-20190429-WA0002-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> 
+                    </div>
+                    <div class="gallery-entry-img 2019 Maiblasen">    
+                        <img src="../subsite/images/references/Maiblasen/MaibWalter-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(2)"> 
+                    </div>
+                    <div class="gallery-entry-img 2019 Maiblasen">    
+                        <img src="../subsite/images/references/Maiblasen/MaibFrühstückWalter-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(3)"> 
+                    </div>
+                    <div class="gallery-entry-img 2019 Maiblasen">    
+                        <img src="../subsite/images/references/Maiblasen/MaibamHänger-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(4)"> 
+                    </div>
+                    <div class="gallery-entry-img 2019 Maiblasen">    
+                        <img src="../subsite/images/references/Maiblasen/IMG_20190501_104027-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(5)"> 
+                    </div>
                 </div>
             </div>
 
