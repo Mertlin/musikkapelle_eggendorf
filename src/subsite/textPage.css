@@ -11,10 +11,29 @@
     padding-bottom: 50px;
 }
 
+.img-inline {
+    max-width: 300px;
+}
+
 @media screen and (max-width: 1000px) {
     .text-container{ width: 90%; }
 }
 
-@media screen and (max-width: 550px) {
-    .text-container{ width: 100%; }
+@media screen and (max-width: 600px) {
+    .text-container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .text-container img {
+        max-width: 50vw;
+    }
+
+    .text-container h1 {
+        font-size: 24px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+    }
 }

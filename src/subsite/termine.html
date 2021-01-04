@@ -56,8 +56,8 @@
                 <h1 class="termin-header aktuell">Aktuell</h1>
                 <h1 class="termin-header 2021">2021</h1>
                 <h1 class="termin-header 2020">2020</h1>
-                <!-- Termin 1 -->
-                <div class="termin aktuell 2021" id="31.12.2021">
+                <!-- Termin -->
+                <div class="termin aktuell 2021">
                     <div class="datum">
                         <div class="tag">31.</div>
                         <div class="monat">12.</div>
@@ -67,13 +67,45 @@
                         <h1>Prototype Termin</h1>
                         <p>24:00 Ort des Termins</p>
                     </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="showBeschreibung(0)" onmouseout="hideBeschreibung(0)">
+                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="toggleBeschreibung(0)" onmouseout="toggleBeschreibung(0)" onclick="toggleBeschreibung(0)">
                     <div class="flex-break"></div>
                     <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
                 </div>   
+
+                <!-- Termin -->
+                <div class="termin aktuell 2021">
+                    <div class="datum">
+                        <div class='tag'>1.</div>
+                        <div class='monat'>2.</div>
+                        <div class='jahr'>2021</div>
+                    </div>
+                    <div class="titel">
+                        <h1>Kinderfasching</h1>
+                        <p>13:45 vor der Volksschule</p>
+                    </div>
+                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="toggleBeschreibung(1)" onmouseout="toggleBeschreibung(1)" onclick="toggleBeschreibung(0)">
+                    <div class="flex-break"></div>
+                    <div class="termin-beschreibung">Die Musikkapelle wird den Faschinugsumzug anführen. Verkleidungen sind erwünscht!</div>
+                </div> 
+
+                <!-- Termin -->
+                <div class="termin aktuell 2021">
+                    <div class="datum">
+                        <div class="tag">20.</div>
+                        <div class="monat">1.</div>
+                        <div class="jahr">2021</div>
+                    </div>
+                    <div class="titel">
+                        <h1>Jahreshauptversammlung</h1>
+                        <p>17:00 Gasthaus Puckmayr Pucking</p>
+                    </div>
+                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="toggleBeschreibung(2)" onmouseout="toggleBeschreibung(2)" onclick="toggleBeschreibung(1)">
+                    <div class="flex-break"></div>
+                    <div class="termin-beschreibung">Am Sonntag den 20. Jänner findet die Jahreshauptversammlung mit Weihnachtsfeier statt. Speisen und Getränke werden von der Musikkapelle übernommen.</div>
+                </div>  
                 
-                <!-- Termin 2 -->
-                <div class="termin aktuell 2020" id="31.12.2020">
+                <!-- Termin -->
+                <div class="termin 2020">
                     <div class="datum">
                         <div class="tag">31.</div>
                         <div class="monat">12.</div>
@@ -83,13 +115,13 @@
                         <h1>Prototype Termin</h1>
                         <p>24:00 Ort des Termins</p>
                     </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="showBeschreibung(1)" onmouseout="hideBeschreibung(1)">
+                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="toggleBeschreibung(3)" onmouseout="toggleBeschreibung(3)" onclick="toggleBeschreibung(1)">
                     <div class="flex-break"></div>
                     <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
                 </div>  
 
-                <!-- Termin 3 -->
-                <div class="termin 2020" id="1.1.2020">
+                <!-- Termin -->
+                <div class="termin 2020">
                     <div class="datum">
                         <div class="tag">1.</div>
                         <div class="monat">1.</div>
@@ -99,7 +131,7 @@
                         <h1>Prototype Termin</h1>
                         <p>24:00 Ort des Termins</p>
                     </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="showBeschreibung(1)" onmouseout="hideBeschreibung(1)">
+                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onmouseover="toggleBeschreibung(4)" onmouseout="toggleBeschreibung(4)" onclick="toggleBeschreibung(2)">
                     <div class="flex-break"></div>
                     <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
                 </div>  
@@ -127,14 +159,13 @@
         </footer>
     </body>
     <script>
-        function showBeschreibung(n) {
-            var toShow = document.getElementsByClassName('termin')[n].getElementsByClassName('termin-beschreibung')[0];
-            toShow.style.display = "block";
-        }
-
-        function hideBeschreibung(n) {
-            var toHide = document.getElementsByClassName('termin')[n].getElementsByClassName('termin-beschreibung')[0];
-            toHide.style.display = "none";
+        function toggleBeschreibung(n) {
+            var toggle = document.getElementsByClassName('termin')[n].getElementsByClassName('termin-beschreibung')[0];
+            if(toggle.style.display == "block") {
+                toggle.style.display = "none";
+            } else {
+                toggle.style.display = "block";
+            }
         }
     </script>
 </html>

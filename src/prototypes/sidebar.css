@@ -7,7 +7,6 @@
     display: none;
     position: absolute;
     left: 0;
-    top: 150px;
     flex-flow: column;
     width: 350px;
     background-color: white;
@@ -43,7 +42,6 @@
 
 #sidebar-slider {
     position: absolute;
-    top: 150px;
     left: 0;
     padding: 21.5px;
     display:flex;
@@ -99,19 +97,5 @@
         display:none;
     }
 }
-
-
-/* Not really needed lokks bettwer without */
-/* @media screen and (max-width: 650px) {
-
-    #sidebar {
-        top: 90px;
-    }
-
-    #sidebar-slider {
-        top: 90px;
-    }
-} */
-
 
 

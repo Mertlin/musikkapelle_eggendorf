@@ -5,9 +5,7 @@
 body {
     display:flex;
     flex-flow:column;
-
-    min-height:120vh;
-
+    min-height:100vh;
     min-width:300px;
     margin: 0;
     font-family: 'Lato', sans-serif;
