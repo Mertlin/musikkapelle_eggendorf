@@ -1,12 +1,3 @@
-/* Content Mods */
-#content {
-    display:flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items:flex-start;
-    padding: 76px 0 50px 0;
-}
-
 #termine-container {   
     display:flex;
     flex-flow: column;
@@ -93,61 +84,18 @@
     height: 0;
 }
 
-/* Sidebar mods */
-#sidebar {
-    display: flex;
-    padding: 20px;
-    position: relative;
-    margin-right: 50px;
-}
-
-#se-back {
-    margin-right: 20px;
-}
-
-@media screen and (max-width: 1300px) {
-
-    #content {
-        flex-flow: column;
-        align-items:center;
-        justify-content: flex-start;
-    }
-
-    #termine-container {   
-        display:flex;
-        flex-flow: column;
-    }
-
-    #sidebar {
-        display: none;
-        padding: 0;
-        position: absolute;
-        margin-right: 0;
-    }
-        
-    #sidebar-slider {
-        display:block;
-    }
-
-    #se-back {
-        margin-right: 0;
-    }
-
-} 
-
 /* Responsive Textsize */
 @media screen and (min-width: 1300px) {
+
     .titel h1{
         font-size: 30px;
     }
+    
 }
 
 @media screen and (max-width: 1000px) {
 
     #termine-container {   
-        display:flex;
-        flex-flow: column;
-        align-items: center;
         width: 90%;
         padding: 10px 30px;
     }
@@ -156,9 +104,6 @@
         width:100%;
     }
 
-    .dropdownBeschreibung{
-        width:100%;
-    }
 } 
 
 @media screen and (max-width: 600px) {
@@ -170,20 +115,29 @@
     .datum {
         font-size: small;
     }
+
     .titel {
         font-size: smaller;
         padding:1vw;
     }
+
     .titel h1{
         font-size: 15px;
     }
+
     .termin-dropdown {
         height: 20px;
         padding: 0 5px 0 0;
     }
+
     .text-container {
         padding: 30px;
         width: 100%;
     }
+
+    .termin-beschreibung{
+        font-size: small;
+    }
+
 } 
 

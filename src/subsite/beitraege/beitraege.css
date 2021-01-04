@@ -2,14 +2,6 @@ html {
     display:block;
 }
 
-#content {
-    display:flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items:flex-start;
-    padding: 76px 0 50px 0;
-}
-
 .category-header {
     display: none;
     border-bottom: 3px groove white;
@@ -67,39 +59,12 @@ html {
     display:block;
 }
 
-/* Sidebar mods */
-#sidebar {
-    display: flex;
-    padding: 20px;
-    position: relative;
-    margin-right: 50px;
-}
-
-#se-back {
-    margin-right: 20px;
-}
-
 @media screen and (max-width: 1300px) {
 
     #content {
         flex-flow: column;
         align-items:center;
         justify-content: flex-start;
-    }
-
-    #sidebar {
-        display: none;
-        padding: 0;
-        position: absolute;
-        margin-right: 0;
-    }
-        
-    #sidebar-slider {
-        display:block;
-    }
-
-    #se-back {
-        margin-right: 0;
     }
 
 } 

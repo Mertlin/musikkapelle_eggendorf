@@ -3,10 +3,11 @@
     to {left: 0;}
 }
 
+
 #sidebar {
-    display: none;
-    position: absolute;
-    left: 0;
+    display: flex;
+    position: relative;
+    padding: 20px;
     flex-flow: column;
     width: 350px;
     background-color: white;
@@ -17,9 +18,20 @@
     animation-duration: 0.2s;
     animation-direction: alternate;
     z-index:1;
+    margin-right: 50px;
 }
 
 .sidebar-entry {
+    line-height: 60px;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-bottom: 3px groove white;
+    border-image: linear-gradient(90deg, white 10%, #2E2E2E 10%, #2E2E2E 90%, white 90%);
+    border-image-slice: 1;
+}
+
+.sidebar-fold {
     line-height: 60px;
     text-align: center;
     padding: 5px 20px;
@@ -38,6 +50,7 @@
     right: 0;
     transform: rotate(180deg);
     z-index: 1;
+    margin-right: 20px;
 }
 
 #sidebar-slider {
@@ -69,10 +82,10 @@
     display:none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 
     #sidebar {
-        width: 100%;
+        display:none;
     }
 
     #sidebar-slider {
@@ -96,6 +109,13 @@
     #sidebar-burger {
         display:none;
     }
+
+    .sidebar-entry {
+        display:none;
+    }
+
 }
+
+
 
 
