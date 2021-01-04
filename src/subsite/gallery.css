@@ -1,12 +1,17 @@
-#gallery {
+#content {
+    display:flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items:flex-start;
+    padding: 76px 0 50px 0;
+}
 
+#gallery {
     display: flex;
     flex-flow:column;
     min-height: 800px;
     min-width: 450px;
-    width: 80vw;
     background-color: white;
-    margin: 50px;
     border-radius: 10px;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -68,6 +73,18 @@
 
 .show{
     display: flex;
+}
+
+/* Sidebar mods */
+#sidebar {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    margin-right: 50px;
+}
+
+#se-back {
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 1500px) {
