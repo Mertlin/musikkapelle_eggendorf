@@ -110,7 +110,7 @@
     margin-right: 20px;
 }
 
-/* @media screen and (max-width: 1500px) {
+ @media screen and (max-width: 1500px) {
     #expandedImg{ max-width: 1024px;
                   max-height: 768px;
                 } 
@@ -120,4 +120,4 @@
 @media screen and (max-width: 1200px) {
     #expandedImg{ display: none;} 
     #gallery-buttons { display: none;}
-} */
+} 

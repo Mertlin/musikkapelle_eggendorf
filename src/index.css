@@ -53,5 +53,5 @@ html{display:block;}
 
 
 @media screen and (max-width: 450px) {
-    .showcase-article {width: 90vw; font-size: 4vw;}
+    .showcase-article {width: 90vw; font-size: 4vw; margin: 50px 0;}
 }
