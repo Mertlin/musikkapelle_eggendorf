@@ -63,33 +63,11 @@
         justify-content: flex-start;
     }
 
-    #mitglieder-container {   
-        display:flex;
-        flex-flow: column;
-    }
-
-    #sidebar {
-        display: none;
-        padding: 0;
-        position: absolute;
-        top: 150px;
-        margin-right: 0;
-    }
-        
-    #sidebar-slider {
-        display:block;
-    }
-
-    #se-back {
-        margin-right: 0;
-    }
-
 } 
 
 @media screen and (max-width: 1000px) {
 
     #mitglieder-container {   
-        display:flex;
         flex-flow: column;
         align-items: center;
         width: 90%;
