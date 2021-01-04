@@ -55,7 +55,7 @@
     text-align:center;
     font-size:large;
     line-height: 130%;
-    border-right: 3px ridge rgba(254,171,0);
+    border-right: 3px ridge rgb(254,171,0);
     padding: 5px;
 }
 
@@ -95,7 +95,7 @@
     display: flex;
     padding: 20px;
     position: relative;
-    top: 0px;
+    top: 0;
     margin-right: 50px;
 }
 
@@ -118,10 +118,10 @@
 
     #sidebar {
         display: none;
-        padding: 0px;
+        padding: 0;
         position: absolute;
         top: 150px;
-        margin-right: 0px;
+        margin-right: 0;
     }
         
     #sidebar-slider {
@@ -129,7 +129,7 @@
     }
 
     #se-back {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
 } 
@@ -168,7 +168,7 @@
     }
     .termin-dropdown {
         height: 20px;
-        padding: 0px 5px 0px 0px;
+        padding: 0 5px 0 0;
     }
     .text-container {
         padding: 30px;

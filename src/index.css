@@ -5,9 +5,9 @@ html{display:block;}
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9) ;
     justify-content: center;
-    padding: 0px 0px;
+    padding: 0 0;
     max-height: 450px;
-    box-shadow: 0px 2px 5px 1px black;
+    box-shadow: 0 2px 5px 1px black;
 }
 
 #showcase-image {
@@ -41,7 +41,7 @@ html{display:block;}
 }
 
 .showcase-article-date {
-    padding: 0px 20px;
+    padding: 0 20px;
     line-height: 0.5;
     font-size: small;
 }

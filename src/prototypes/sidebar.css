@@ -1,6 +1,6 @@
 @keyframes slide {
     from {left: -450px;}
-    to {left: 0px;}
+    to {left: 0;}
 }
 
 #sidebar {
@@ -11,7 +11,7 @@
     flex-flow: column;
     width: 350px;
     background-color: white;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     animation-name: slide;

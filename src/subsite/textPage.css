@@ -1,7 +1,7 @@
 .text-container {
     width: 60%;
     background-color: white;
-    margin: 50px 0px;
+    margin: 50px 0;
     border-radius: 10px;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
