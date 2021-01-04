@@ -1,44 +1,67 @@
-#gallery {
+/* Content Mods */
+ #content {
+    display:flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items:flex-start;
+    padding-top: 76px;
+} 
 
+ #gallery {   
     display: flex;
-    flex-flow:column;
-    min-height: 800px;
-    min-width: 450px;
-    width: 80vw;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: nowrap; 
     background-color: white;
-    margin: 50px;
-    border-radius: 10px;
-    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 1000px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);	 
+    overflow:hidden;
+} 
 
-.gallery-entry{
+#gallery-entry{
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
+} 
+
+.gallery-entry-img {
+    display:flex;
+    position:relative;
+    width: 250px;
+    z-index: 0;
+    overflow: hidden;  
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2); 
+    margin: 25px; 
+    font-size: smaller;
 }
 
-.gallery-entry-img{
-    display : none;
-    padding: 30px;
-}
-
-.gallery-img{
+.gallery-header {
     display: flex;
-    justify-content: space-around;
+    border-bottom: 3px groove white;
+    border-image: linear-gradient(90deg, #2E2E2E 00%, #2E2E2E 80%, white 90%);
+    border-image-slice: 1;
+    width: 100%;
 }
 
-#expandedImg{
-    /*16:9*/
-    max-width: 1366px;
+/* .gallery-img{
+    display: none;
+    justify-content: space-around;
+}  */
+
+/* #expandedImg{
+     max-width: 1366px;
     max-height: 768px;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
     margin-top:0;
     padding: 20px;
-}
+}  */
 
-#gallery-buttons {
+/* #gallery-buttons-img{
     position: relative;
     top: 384px;
     left: 0;
@@ -47,9 +70,9 @@
     margin: 20px;
     z-index: 1;
     justify-content: space-between;
-}
+} */
 
-#gallery-button-right:hover{
+/* #gallery-button-right:hover{
     background-color: grey;
 }
 
@@ -64,13 +87,30 @@
 #gallery-button-left{
     padding-right: 20px;
     transform: rotate(180deg);
-}
+} */
 
-.show{
+/* .show{
     display: flex;
+} */
+
+.titel h1 {
+    line-height: 50%;
 }
 
-@media screen and (max-width: 1500px) {
+/* Sidebar mods */
+#sidebar {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    margin-right: 50px;
+}
+
+#se-back {
+    margin-right: 20px;
+}
+
+/* @media screen and (max-width: 1500px) {
     #expandedImg{ max-width: 1024px;
                   max-height: 768px;
                 } 
@@ -80,4 +120,4 @@
 @media screen and (max-width: 1200px) {
     #expandedImg{ display: none;} 
     #gallery-buttons { display: none;}
-}
+} */
