@@ -1,12 +1,4 @@
 /* Content Mods */
- #content {
-    display:flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items:flex-start;
-    padding-top: 76px;
-} 
-
  #gallery {   
     display: flex;
     flex-flow: column;
@@ -95,19 +87,6 @@
 
 .titel h1 {
     line-height: 50%;
-}
-
-/* Sidebar mods */
-#sidebar {
-    display: flex;
-    padding: 20px;
-    position: relative;
-    top: 0;
-    margin-right: 50px;
-}
-
-#se-back {
-    margin-right: 20px;
 }
 
  @media screen and (max-width: 1500px) {

@@ -46,13 +46,13 @@
             </div>
         </nav>
         <div id="content">
-            <div id="sidebar-slider" onclick="showSidebar()">
-                <img id="sidebar-burger" class="sidebar-slider-img" src="../prototypes/images/burger.png" alt="Sidebar Show Burger" >
-                <img id="sidebar-arrow" class="sidebar-slider-img" src="../prototypes/images/rechter-pfeil.png">
-           </div>
             <div id="sidebar">
-                <div class="sidebar-entry funktionaere" onclick="select('funktionaere')">Funktionäre</div>
+                <div class="sidebar-fold">
+                    <div class="sidebar-fold-entry">Sidebar</div>
+                    <img id="sidebar-fold-arrow" src="../prototypes/images/rechter-pfeil.png" alt="Sidebar Foldout" onclick="toggleSidebarFold()"/>
+                </div>
                 <img id="se-back" src="../prototypes/images/rechter-pfeil.png" alt="Pfeil Zurück" onclick="back()">
+                <div class="sidebar-entry funktionaere" onclick="select('funktionaere')">Funktionäre</div>
                 <div class="sidebar-entry gruppe1" onclick="select('gruppe1')">Gruppe 1</div>
                 <div class="sidebar-entry gruppe2" onclick="select('gruppe2')">Gruppe 2</div>
                 <div class="sidebar-entry sidebar-sub funktionaere" onclick="selectRegister('vorstand')">Vorstand</div>

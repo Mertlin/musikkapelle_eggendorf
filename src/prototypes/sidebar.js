@@ -12,6 +12,18 @@ function showSidebar() {
     }    
 }
 
+function toggleSidebarFold() {
+    var s = document.getElementsByClassName('sidebar-entry');
+    for (i = 0; i < s.length; i++) {
+        if(s[i].style.display == 'flex') {
+            s[i].style.display = 'none';
+        }
+        else {
+            s[i].style.display = 'flex';
+        }  
+    }
+}
+
 function select(className) {
     var backArrow = document.getElementById('se-back');
     var toHide = document.getElementsByClassName('sidebar-entry');
@@ -20,18 +32,10 @@ function select(className) {
         toHide[i].style.display = 'none';
     }
     for (i = 0; i < toShow.length; i++) {
-        if (toShow[i].classList.contains('termin')) {
-            toShow[i].style.display = 'flex';
-        } else {
-            toShow[i].style.display = 'block';
-        }
+        toShow[i].style.display = 'flex';
     }
-    backArrow.style.display = 'block';
-    if (!toShow[0].classList.contains("active")) {
-        toShow[0].classList.add("active");
-        backArrow.classList.add("active");
-        toShow[0].classList.add("active-border");
-    }
+    backArrow.style.display = 'flex';
+
 
     /* Hide aktuelle Beiträge oder Termine (nur für beitraege/beitraege.html)*/
     var toHideContent = document.getElementsByClassName('aktuell');
@@ -49,12 +53,10 @@ function back() {
     
     backArrow.style.display = 'none';
     for( i = 0; i < toShowBar.length;i++){
-        toShowBar[i].style.display = 'block';
+        toShowBar[i].style.display = 'flex';
     }
     for( i = 0; i < toShowBar.length;i++){
-        toShowBar[i].style.display = 'block';
-        toShowBar[i].classList.remove("active-border");
-        toShowBar[i].classList.remove("active");    
+        toShowBar[i].style.display = 'flex';
     }
 
     for( i = 0; i < toHideBar.length;i++){
@@ -88,3 +90,22 @@ function back() {
     }
 
 }
+
+
+/* Needed for when maximizing window with closed sidebar */
+var x = window.matchMedia('(min-width: 1300px)');
+function watchScreenSize(x) {
+    var se = document.getElementsByClassName("sidebar-entry");
+    if (x.matches) { // If media query matches
+        for( i = 0; i < se.length; i++){
+            se[i].style.display = 'flex';
+        }
+    } else {
+        ;
+    }
+    console.log('Hallo');
+}
+x.addListener(watchScreenSize); // Attach listener function on state changes 
+ 
+watchScreenSize(x); // Call listener function at run time
+    

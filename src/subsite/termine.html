@@ -46,6 +46,10 @@
         <div id="content">
             <!-- Sidebar -->
             <div id="sidebar">
+                <div class="sidebar-fold">
+                    <div class="sidebar-fold-entry">Sidebar</div>
+                    <img id="sidebar-fold-arrow" src="../prototypes/images/rechter-pfeil.png" alt="Sidebar Foldout" onclick="toggleSidebarFold()"/>
+                </div>
                 <img id="se-back" src="../prototypes/images/rechter-pfeil.png" alt="Pfeil Zurück" onclick="back()"/>
                 <div class="sidebar-entry 2021" onclick="select('2021')">2021</div>
                 <div class="sidebar-entry 2020" onclick="select('2020')">2020</div>
@@ -137,10 +141,6 @@
                 </div>  
             </div>
 
-            <div id="sidebar-slider" onclick="showSidebar()">
-                <img id="sidebar-burger" class="sidebar-slider-img" src="../prototypes/images/burger.png" alt="Sidebar Show Burger" >
-                <img id="sidebar-arrow" class="sidebar-slider-img" src="../prototypes/images/rechter-pfeil.png">
-            </div>
         </div>
         <footer>
         <div id="footer-wrapper">

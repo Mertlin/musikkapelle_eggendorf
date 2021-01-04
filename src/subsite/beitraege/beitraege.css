@@ -39,14 +39,10 @@ html {
     font-size: smaller;
 }
 
-.beitrag img{
-    max-width: 100%;
-}
-
 .beitrag-titel {
+    width: 100%;
     margin: 0;
     position: absolute;
-    width: 100%;
     height: 70px;
     bottom: 0;
     padding: 10px 15px;
@@ -76,19 +72,30 @@ html {
     }
 }
 
-@media screen and (max-width: 550px) {
-    .text-container {
-        padding: 30px;
-        width: 100%;
+@media screen and (max-width: 600px) {
+
+    .text-container img {
+        max-width: 100%;
     }
 
-    .beitrag {
-        max-width: 95vw;
+    .text-container h1 {
+        font-size: 17px;
     }
     
+    .beitrag {
+        position: relative;
+        max-width: 95%;
+        z-index: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
+        margin: 25px;
+        font-size: smaller;
+    }
+
     .beitrag-titel {
-        font-size: 20px;
         height: 50px;
+        width: 100%;
     }
 }
 
