@@ -5,7 +5,9 @@
 body {
     display:flex;
     flex-flow:column;
-    min-height:1250px;/* Doomed */
+
+    min-height:120vh;
+
     min-width:300px;
     margin: 0px;
     font-family: 'Lato', sans-serif;
