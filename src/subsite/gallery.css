@@ -1,6 +1,6 @@
 
 .gallery-header {
-    display: flex;
+    display: none;
     border-bottom: 3px groove white;
     border-image: linear-gradient(90deg, #2E2E2E 00%, #2E2E2E 80%, white 90%);
     border-image-slice: 1;

@@ -16,7 +16,8 @@ function selectEvent(year,ev){
 
     var toHide = document.getElementsByClassName("gallery-entry-img");
     var toShow = document.getElementsByClassName(list);
-    
+    var hideHeader = document.getElementsByClassName("gallery-header");
+
     for(var i = 0; i < toHide.length; i++) {
         toHide[i].style.display = 'none';
         toHide[i].classList.remove("show");
@@ -25,6 +26,12 @@ function selectEvent(year,ev){
         toShow[i].style.display = 'flex';
         toShow[i].classList.add("show");
     }
+
+    for (i = 0; i < hideHeader.length; i++) {
+        hideHeader[i].style.display = 'none';
+    }
+
+    document.getElementById(list).style.display = "flex";
 }
 
 function showSlide(n){

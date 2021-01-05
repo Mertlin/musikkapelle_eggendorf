@@ -52,12 +52,9 @@
                     <img id="sidebar-fold-arrow" src="../prototypes/images/rechter-pfeil.png" alt="Sidebar Foldout" onclick="toggleSidebarFold()"/>
                 </div>
                 <img id="se-back" src="../prototypes/images/cancel.png" alt="X to cancel selection" onclick="back()">
-                <div class="sidebar-entry funktionaere" onclick="select('funktionaere')">Funktionäre</div>
-                <div class="sidebar-entry gruppe1" onclick="select('gruppe1')">Gruppe 1</div>
-                <div class="sidebar-entry gruppe2" onclick="select('gruppe2')">Gruppe 2</div>
-                <div class="sidebar-entry sidebar-sub funktionaere" onclick="selectRegister('vorstand')">Vorstand</div>
-                <div class="sidebar-entry sidebar-sub gruppe1" onclick="selectRegister('register1')">Register#1</div>
-                <div class="sidebar-entry sidebar-sub gruppe1" onclick="selectRegister('register2')">Register#2</div>
+                <div class="sidebar-entry vorstand" onclick="select('vorstand'), selectRegister('vorstand')">Vorstand</div>
+                <div class="sidebar-entry register1" onclick="select('register1'), selectRegister('register1')">Register#1</div>
+                <div class="sidebar-entry register2" onclick="select('register2'), selectRegister('register2')">Register#2</div>
             </div>
 
             <div id="mitglieder-container">

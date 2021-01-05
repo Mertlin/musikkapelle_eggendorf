@@ -56,8 +56,8 @@
                 <div class="sidebar-entry 2020" onclick="select('2020')">2020</div>
                 <div class="sidebar-entry 2019" onclick="select('2019')">2019</div>
                 <div class="sidebar-entry 2018" onclick="select('2018')">2018</div>
-                <div class="sidebar-entry sidebar-sub 2019" onclick="selectEvent('2019','Maiblasen')">Maiblasen</div>
-                <div class="sidebar-entry sidebar-sub 2018" onclick="selectEvent('2018','Herbstblasen')">Herbstblasen</div>
+                <div class="sidebar-entry sidebar-sub hidden 2019" onclick="selectEvent('2019','Maiblasen')">Maiblasen</div>
+                <div class="sidebar-entry sidebar-sub hidden 2018" onclick="selectEvent('2018','Herbstblasen')">Herbstblasen</div>
             </div> 
 
             <!--PHOTOS-->
@@ -72,7 +72,9 @@
                 </div>
                 <div id="gallery-wrapper">
 
-                    <h1 class="gallery-header Herbstblasen">Herbstblasen</h1>
+                    <h1 class="gallery-header" id="2018 Herbstblasen" style="display: flex;">Herbstblasen 2018</h1>
+                    <h1 class="gallery-header" id="2019 Maiblasen" >Maiblasen 2019</h1>
+
                     <div class="gallery-entry-img 2018 Herbstblasen show"> 
                         <img src="../subsite/images/references/Herbstblasen/HB1-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> 
                     </div>
@@ -82,8 +84,6 @@
                     <div class="gallery-entry-img 2018 Herbstblasen show"> 
                         <img src="../subsite/images/references/Herbstblasen/HB3-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(3)"> 
                     </div>
-
-                    <!-- <h1 class="gallery-header Maiblasen">Maiblasen</h1> -->
                     <div class="gallery-entry-img 2019 Maiblasen">    
                         <img src="../subsite/images/references/Maiblasen/IMG-20190429-WA0002-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> 
                     </div>
