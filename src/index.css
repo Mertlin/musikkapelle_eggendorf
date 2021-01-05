@@ -33,7 +33,6 @@ html{display:block;}
 .showcase-article {
     display: flex;
     flex-flow: column;
-    min-height: 800px;
     width: 450px;
     background-color: white;
     margin: 50px 50px 0 50px;
