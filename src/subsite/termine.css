@@ -11,8 +11,8 @@
 }
 
 .termin {    
-    min-width: 300px;
-    width: 800px;
+    max-width: 750px;
+    width: 100%;
     margin-top: 10px;
     display:none;
     flex-wrap: wrap;
@@ -93,6 +93,16 @@
     
 }
 
+@media screen and (max-width: 1300px) {
+
+    #termine-container {   
+        width: 60%;
+    }
+
+} 
+
+
+
 @media screen and (max-width: 1000px) {
 
     #termine-container {   
@@ -109,6 +119,11 @@
 @media screen and (max-width: 600px) {
 
     #termine-container {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    #sidebar {
         width: 100%;
     }
 

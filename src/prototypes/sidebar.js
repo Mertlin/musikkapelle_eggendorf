@@ -1,66 +1,68 @@
-function showSidebar() {
-    var s = document.getElementById('sidebar');
-    var ss = document.getElementById('sidebar-slider');
-    var ssArrow = document.getElementById('sidebar-arrow');
-    if(s.style.display == 'flex') {
-        s.style.display = 'none';
-        ssArrow.style.transform = "rotate(0deg)";
-    }
-    else {
-        s.style.display = 'flex';
-        ssArrow.style.transform = "rotate(180deg)";
-    }    
-}
-
 function toggleSidebarFold() {
     var s = document.getElementsByClassName('sidebar-entry');
+    var sArrow = document.getElementById('sidebar-fold-arrow');
+    var shown = false;
     for (i = 0; i < s.length; i++) {
-        if(s[i].style.display == 'flex') {
-            s[i].style.display = 'none';
+        if (s[i].style.display == "flex" || shown == true) {
+            shown = true;
         }
-        else {
-            s[i].style.display = 'flex';
-        }  
+    }
+    console.log(shown);
+    for (i = 0; i < s.length; i++) {
+        if (shown == true) {
+            s[i].style.display = "none";
+        } else {
+            s[i].style.display = "flex";
+
+        }
+    }
+    if(sArrow.style.transform == "rotate(90deg)") {
+        sArrow.style.transform = "rotate(180deg)";
+    } else {
+        sArrow.style.transform = "rotate(90deg)";
     }
 }
 
 function select(className) {
-    var backArrow = document.getElementById('se-back');
+    /* Show the cancel button */
+    document.getElementById('se-back').style.display = 'flex';
+    /* Hide all sidebar-entries */
     var toHide = document.getElementsByClassName('sidebar-entry');
-    var toShow = document.getElementsByClassName(className);
     for(var i = 0; i < toHide.length; i++) {
-        toHide[i].style.display = 'none';
+        toHide[i].classList.add('hidden');
     }
+    /* Show all sidebar-entries with className */
+    var toShow = document.getElementsByClassName(className);
     for (i = 0; i < toShow.length; i++) {
-        toShow[i].style.display = 'flex';
+        toShow[i].classList.remove('hidden');
     }
-    backArrow.style.display = 'flex';
-
-
-    /* Hide aktuelle Beiträge oder Termine (nur für beitraege/beitraege.html)*/
+    /* Hide or show aktuelle Beiträge oder Termine (nur für beitraege/beitraege.html)*/
     var toHideContent = document.getElementsByClassName('aktuell');
     for( i = 0; i < toHideContent.length;i++){
-        if (!toHideContent[i].classList.contains(className))
+        if (!toHideContent[i].classList.contains(className)) {
             toHideContent[i].style.display = 'none';
+        }
+    }
+    var toShowContent = document.querySelectorAll('.beitrag, .termin, .category-header, .termin-header');
+    for( i = 0; i < toShowContent.length;i++){
+        if(toShowContent[i].classList.contains(className)) {
+            toShowContent[i].style.display = 'flex';
+        }
     }
 }
 
 function back() {
     /* Allgemeine Sidebar Funktion */
-    var backArrow = document.getElementById('se-back');
+    document.getElementById('se-back').style.display = 'none';
+
     var toShowBar = document.getElementsByClassName('sidebar-entry');
     var toHideBar = document.getElementsByClassName('sidebar-sub');
+    for( i = 0; i < toShowBar.length;i++){
+        toShowBar[i].classList.remove("hidden");
+    }
     
-    backArrow.style.display = 'none';
-    for( i = 0; i < toShowBar.length;i++){
-        toShowBar[i].style.display = 'flex';
-    }
-    for( i = 0; i < toShowBar.length;i++){
-        toShowBar[i].style.display = 'flex';
-    }
-
     for( i = 0; i < toHideBar.length;i++){
-        toHideBar[i].style.display = 'none';
+        toHideBar[i].classList.add("hidden");
     }
 
     /* Nur für beitraege und termine benötigt */
@@ -103,7 +105,6 @@ function watchScreenSize(x) {
     } else {
         ;
     }
-    console.log('Hallo');
 }
 x.addListener(watchScreenSize); // Attach listener function on state changes 
  

@@ -11,7 +11,7 @@
     flex-flow: column;
     width: 350px;
     background-color: white;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     animation-name: slide;
@@ -29,12 +29,13 @@
 }
 
 #sidebar-fold-arrow {
-    transform: rotate(90deg);
     position:absolute;
     right: 0;
     top: 20px;
-    padding: 15px;
+    padding: 20px;
     height: 63px;
+    transform: rotate(180deg);
+    transition: transform 0.3s;
 }
 
 .sidebar-fold-entry {
@@ -64,11 +65,9 @@
     box-sizing: border-box;
     display:none;
     height: 70px;
-    padding: 20px 15px;
+    padding: 25px;
     position: absolute;
-    right: 0;
-
-    transform: rotate(180deg);
+    right: 8%;
     z-index: 1;
     margin-right: 20px;
 }
@@ -95,6 +94,10 @@
 
 .sidebar-sub {
     display:none;
+}
+
+.hidden {
+    display:none !important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -146,8 +149,9 @@
         width: 90%;
         margin: 0 0 15px 0;
     }
-
+    
 }
+
 
 
 
