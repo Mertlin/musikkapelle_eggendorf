@@ -5,6 +5,8 @@ function displayImg(item){
     var expandImg = document.getElementById("expandedImg");
     var str = item.src.substring(0,item.src.length-10);
     expandImg.src = str.concat(".jpg");
+
+    document.getElementById("popupImg").style.display = "block";
 }
 
 function selectEvent(year,ev){
@@ -14,9 +16,6 @@ function selectEvent(year,ev){
 
     var toHide = document.getElementsByClassName("gallery-entry-img");
     var toShow = document.getElementsByClassName(list);
-
-    //change large image
-    displayImg(toShow[0].children[0]);
     
     for(var i = 0; i < toHide.length; i++) {
         toHide[i].style.display = 'none';
@@ -44,4 +43,8 @@ function plusSlide(n){
 
 function currentSlide(n){
     showSlide(index = n);
+}
+
+function closeExpandedImg(){
+    document.getElementById("popupImg").style.display = "none";
 }
