@@ -1,17 +1,56 @@
 .text-container {
+    display:flex;
+    flex-flow: column;
     width: 60%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    padding: 5px 50px 25px;
+    padding: 5px 50px 0 50px;
     font-size: 18px;
     line-height: 1.7;
-    padding-bottom: 50px;
 }
 
 .img-inline {
+    display:inline;
     max-width: 300px;
+    margin: 1vw;
+}
+
+.text {
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.text-links {
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: space-between;
+    margin: 0 -50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px ridge rgba(0, 0, 0, 0.2);
+}
+
+
+
+.text-link {
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px ridge rgba(0, 0, 0, 0.2);
+    line-height: 10px;
+}
+
+.text-link img {
+    height: 49px;
+    padding: 15px;
+}
+
+.author {
+    font-size:smaller;
 }
 
 @media screen and (max-width: 1000px) {
@@ -20,19 +59,24 @@
 
 @media screen and (max-width: 600px) {
     .text-container {
-        width: 90%;
-        padding: 10px;
+        width: 98%;
+        padding: 10px 10px 0 10px;
     }
     
     .text-container img {
-        max-width: 50vw;
+        max-width: 45vw;
+        max-width: 45vw;
     }
 
     .text-container h1 {
         font-size: 24px;
     }
 
-    .text-container p {
+    .text-container > p {
         font-size: 16px;
+    }
+
+    .text-links {
+        height: 50px;
     }
 }
