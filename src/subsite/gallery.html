@@ -65,9 +65,11 @@
                 <div id="popupImg" class="gallery-img">
                         <span class="close" onclick="closeExpandedImg()">&times;</span>
                     <div class="gallery-img-content">
-                        <img class="gallery-img-content gallery-button-left" class="gallery-buttons-img" src="../prototypes/images/rechter-pfeil.png" onclick="plusSlide(-1)">
-                        <img id="expandedImg" src="../subsite/images/references/Herbstblasen/HB1.jpg" alt="Slideshow">
-                        <img class="gallery-img-content gallery-button-right" class="gallery-buttons-img" src="../prototypes/images/rechter-pfeil.png" onclick="plusSlide(1)"> 
+                        <div class="img">
+                            <img id="expandedImg" src="../subsite/images/references/Herbstblasen/HB1.jpg" alt="Slideshow">
+                        </div>
+                        <a class="gallery-button-left" onclick="plusSlide(-1)">&#10094;</a>
+                        <a class="gallery-button-right" onclick="plusSlide(1)">&#10095;</a>
                     </div>
                 </div>
                 <div id="gallery-wrapper">
