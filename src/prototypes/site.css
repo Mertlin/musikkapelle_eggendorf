@@ -27,7 +27,6 @@ h1, p{
 }
 
 #content {
-    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items:flex-start;
@@ -41,7 +40,6 @@ h1, p{
     #content {
         flex-flow: column;
         align-items:center;
-        justify-content: space-around;
     }
 
 } 
