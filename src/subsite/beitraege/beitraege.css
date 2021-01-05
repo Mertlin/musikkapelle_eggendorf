@@ -25,6 +25,7 @@ html {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 1px 2px 4px rgba(0,0,0,.4);	 
     overflow:hidden;
+    line-height: normal;
 }
 
 .beitrag {
@@ -43,7 +44,6 @@ html {
     width: 100%;
     margin: 0;
     position: absolute;
-    height: 70px;
     bottom: 0;
     padding: 10px 15px;
     background-color: rgba(0,0,0,0.7);
@@ -83,7 +83,6 @@ html {
     }
     
     .beitrag {
-        position: relative;
         max-width: 95%;
         z-index: 0;
         overflow: hidden;
@@ -93,10 +92,6 @@ html {
         font-size: smaller;
     }
 
-    .beitrag-titel {
-        height: 50px;
-        width: 100%;
-    }
 }
 
 

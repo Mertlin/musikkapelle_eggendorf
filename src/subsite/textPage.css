@@ -32,8 +32,6 @@
     border-top: 1px ridge rgba(0, 0, 0, 0.2);
 }
 
-
-
 .text-link {
     display: flex;
     flex-flow: row nowrap;  
