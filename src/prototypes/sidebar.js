@@ -36,6 +36,9 @@ function select(className) {
     for (i = 0; i < toShow.length; i++) {
         toShow[i].classList.remove('hidden');
     }
+
+
+
     /* Hide or show aktuelle Beiträge oder Termine (nur für beitraege/beitraege.html)*/
     var toHideContent = document.getElementsByClassName('aktuell');
     for( i = 0; i < toHideContent.length;i++){
