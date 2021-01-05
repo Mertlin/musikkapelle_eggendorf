@@ -41,6 +41,10 @@ html{display:block;}
     overflow: hidden;
 }
 
+.showcase-article img {
+    max-width: 100%;
+}
+
 .showcase-article-text {
     padding: 5px 20px;
     color: black;
@@ -60,5 +64,4 @@ html{display:block;}
 
 @media screen and (max-width: 600px) {
     .showcase-article {width:90%; font-size: 4vw; margin: 20px 0; min-height: 400px;}
-    .showcase-article img {max-width: 100%;}
 }
