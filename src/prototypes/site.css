@@ -29,8 +29,6 @@ h1, p{
 #content {
     max-width: 100%;
     display: flex;
-    justify-content: center;
-    align-items:flex-start;
     flex-grow: 1;
     flex-flow: row;
     padding: 76px 0 50px 0;
@@ -41,7 +39,6 @@ h1, p{
     #content {
         flex-flow: column;
         align-items:center;
-        justify-content: space-around;
     }
 
 } 
