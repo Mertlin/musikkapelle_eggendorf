@@ -27,6 +27,7 @@ h1, p{
 }
 
 #content {
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items:flex-start;
