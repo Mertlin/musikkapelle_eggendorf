@@ -4,5 +4,4 @@
 * Projekt-Typ: Website
 * Externe Bibliotheken: Keine
 * Zeitaufwand: ca. 70h
-* Getting started: index.html im Webbrowser öffnen oder https://mk-eggendorf.at besuchen
-
+* Getting started: index.html im Webbrowser öffnen oder [https://mk-eggendorf.at]() besuchen
