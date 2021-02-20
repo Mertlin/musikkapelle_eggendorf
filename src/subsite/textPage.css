@@ -52,7 +52,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .text-container{ width: 90%; }
+    .text-container{ width: 95%; }
 }
 
 @media screen and (max-width: 600px) {

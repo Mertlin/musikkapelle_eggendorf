@@ -36,7 +36,22 @@
     padding: 10px 15px;
     color: white;
     background-color: rgba(0, 0, 0, 0.705);
-    font-weight: normal;
+    font-weight: lighter;
+    font-size: 17pt;
+}
+
+.mitglieder-name {
+    font-weight: lighter;
+    font-size: 16pt;
+    line-height: 5pt;
+}
+
+
+.mitglieder-beschreibung {
+    font-weight: lighter;
+    font-size: 16pt;
+    line-height: 5pt;
+    bottom: 5px;
 }
 
 
@@ -71,7 +86,7 @@
     #mitglieder-container {   
         flex-flow: column;
         align-items: center;
-        width: 90%;
+        width: 95%;
         padding: 30px;
     }
 } 

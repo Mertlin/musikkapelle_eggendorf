@@ -146,16 +146,8 @@
 @media screen and (max-width: 1000px) {
 
     #sidebar {
-        width: 90%;
-        margin: 0 0 15px 0;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-
-    #sidebar {
         width: 95%;
+        margin: 0 0 15px 0;
     }
     
 }

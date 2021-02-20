@@ -27,7 +27,7 @@
                 <div id="nav-links-wrapper">
                     <a href="../index.html"><div class="nav-links">Home</div></a>
                     <a href="gallery.html"><div class="nav-links">Galerie</div></a>
-                    <a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>
+                    <!--<a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>-->
                     <a href="mitglieder.html"><div class="nav-links">Mitglieder</div></a>
                     <a href="termine.html"><div class="nav-links">Termine</div></a>
                     <a href="beitraege/beitraege.html"><div class="nav-links">Beiträge</div></a>
@@ -48,14 +48,14 @@
         <div id="content">
             <div id="sidebar">
                 <div class="sidebar-fold">
-                    <div class="sidebar-fold-entry">Sidebar</div>
+                    <div class="sidebar-fold-entry">Navigation</div>
                     <img id="sidebar-fold-arrow" src="../prototypes/images/rechter-pfeil.png" alt="Sidebar Foldout" onclick="toggleSidebarFold()"/>
                 </div>
                 <img id="se-back" src="../prototypes/images/cancel.png" alt="X to cancel selection" onclick="back()">
                 <div class="sidebar-entry vorstand" onclick="select('vorstand'), selectRegister('vorstand')">Vorstand</div>
-                <div class="sidebar-entry register1" onclick="select('register1'), selectRegister('register1')">Register#1</div>
-                <div class="sidebar-entry register2" onclick="select('register2'), selectRegister('register2')">Register#2</div>
-            </div>
+                <div class="sidebar-entry hohesblech" onclick="select('hohesblech'), selectRegister('hohesblech')">Hohes Blech</div>
+<!--                 <div class="sidebar-entry register2" onclick="select('register2'), selectRegister('register2')">Register#2</div>
+ -->            </div>
 
             <div id="mitglieder-container">
                 <div id="mitglieder-wrapper">
@@ -63,30 +63,145 @@
                     <h1 class="mitglied-header vorstand">Vorstand</h1>
                     <div class="mitglied vorstand">
                         <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
-                        <h1 class="mitglieder-text">Martin Reder<br>Kassa</h1>
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Bernhardt Neubauer</h1>
+                            <h2 class="mitglieder-beschreibung">Kapellmeißter</h2>
+                        </div>
                     </div>
                     <div class="mitglied vorstand">
                         <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
-                        <h1 class="mitglieder-text">Name<br>Funktion</h1>
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Anton Reder</h1>
+                            <h2 class="mitglieder-beschreibung">Obmann</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied vorstand">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Martin Reder</h1>
+                            <h2 class="mitglieder-beschreibung">Medienreferent</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied vorstand">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Johannes Geistberger</h1>
+                            <h2 class="mitglieder-beschreibung">Kassier</h2>
+                        </div>
                     </div>
                     <div class="mitglied vorstand">
                         <img src="../subsite/images/female-user-placeholder.jpg" alt="Bild eines Mitgliedes">
-                        <h1 class="mitglieder-text">Name<br>Funktion</h1>
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Astrid Neubauer</h1>
+                            <h2 class="mitglieder-beschreibung">Schriftführerin</h2>
+                        </div>
                     </div>
-
-                    <!-- Register #1 -->
-                    <h1 class="mitglied-header register1">Register #1</h1>
-                    <div class="mitglied register1">
+                    <div class="mitglied vorstand">
+                        <img src="../subsite/images/female-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Andrea Reder</h1>
+                            <h2 class="mitglieder-beschreibung">Jugendreferentin</h2>
+                        </div>
+                    </div>                    
+                    <div class="mitglied vorstand">
+                        <img src="../subsite/images/female-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Theresa Wimmer</h1>
+                            <h2 class="mitglieder-beschreibung">Jugendreferentin</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied vorstand">
                         <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
-                        <h1 class="mitglieder-text">Martin Reder<br>Trompete</h1>
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Martin Spreitzer</h1>
+                            <h2 class="mitglieder-beschreibung">J-Kapellmeißter</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied vorstand">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Lukas Geistberger</h1>
+                            <h2 class="mitglieder-beschreibung">J-Kapellmeißter Stv.</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied vorstand">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Franz Schachermayr</h1>
+                            <h2 class="mitglieder-beschreibung">Bekleidung</h2>
+                        </div>
                     </div>
 
-                    <!-- Register #2 -->
+                    <!-- Hohes Blech -->
+                    <h1 class="mitglied-header hohesblech">Hohes Blech</h1>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Martin Reder</h1>
+                            <h2 class="mitglieder-beschreibung">Trompete</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Markus Brandstötter</h1>
+                            <h2 class="mitglieder-beschreibung">Trompete</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Michael Obermair</h1>
+                            <h2 class="mitglieder-beschreibung">Trompete</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Robert Kubicka</h1>
+                            <h2 class="mitglieder-beschreibung">Trompete</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Robert Neubauer</h1>
+                            <h2 class="mitglieder-beschreibung">Flügelhorn</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Alina Neubauer</h1>
+                            <h2 class="mitglieder-beschreibung">Flügelhorn</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Josef Neubauer</h1>
+                            <h2 class="mitglieder-beschreibung">Flügelhorn</h2>
+                        </div>
+                    </div>
+                    <div class="mitglied hohesblech">
+                        <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Josef Neubauer Jun.</h1>
+                            <h2 class="mitglieder-beschreibung">Flügelhorn</h2>
+                        </div>
+                    </div>
+
+<!-- 
+                <!-- Register #2 --
                     <h1 class="mitglied-header register2">Register #2</h1>
                     <div class="mitglied register2">
                         <img src="../subsite/images/male-user-placeholder.jpg" alt="Bild eines Mitgliedes">
-                        <h1 class="mitglieder-text">Name<br>Instrument</h1>
+                        <div class="mitglieder-text">
+                            <h1 class="mitglieder-name">Anton Reder</h1>
+                            <h2 class="mitglieder-beschreibung">Obmann</h2>
+                        </div>
                     </div>
+-->
                 </div>
 
             </div>

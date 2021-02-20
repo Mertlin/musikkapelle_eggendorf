@@ -3,8 +3,9 @@
         <title>Musikkapelle Eggendorf</title>
         <meta name="keywords" content="">
         <meta name="description" content="Homepage der  Musikkapelle Eggendorf">
-                <meta name="authors" content="Martin Reder & Patrick Peham">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        <script defer src="../prototypes/sidebar.js"></script>
+        <meta name="authors" content="Martin Reder & Patrick Peham">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <script defer src="../prototypes/sidebar.js"></script>
 
         <link rel="stylesheet" href="../prototypes/nav.css">
         <link rel="stylesheet" href="../prototypes/footer.css">
@@ -25,7 +26,7 @@
                 <div id="nav-links-wrapper">
                     <a href="../index.html"><div class="nav-links">Home</div></a>
                     <a href="gallery.html"><div class="nav-links">Galerie</div></a>
-                    <a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>
+                    <!--<a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>-->
                     <a href="mitglieder.html"><div class="nav-links">Mitglieder</div></a>
                     <a href="termine.html"><div class="nav-links">Termine</div></a>
                     <a href="beitraege/beitraege.html"><div class="nav-links">Beiträge</div></a>
@@ -44,10 +45,11 @@
             </div>
         </nav>
         <div id="content">
+
             <!-- Sidebar -->
             <div id="sidebar">
                 <div class="sidebar-fold">
-                    <div class="sidebar-fold-entry">Sidebar</div>
+                    <div class="sidebar-fold-entry">Navigation</div>
                     <img id="sidebar-fold-arrow" src="../prototypes/images/rechter-pfeil.png" alt="Sidebar Foldout" onclick="toggleSidebarFold()"/>
                 </div>
                 <img id="se-back" src="../prototypes/images/cancel.png" alt="X to cancel selection" onclick="back()"/>
@@ -60,7 +62,13 @@
                 <h1 class="termin-header aktuell">Aktuell</h1>
                 <h1 class="termin-header 2021">2021</h1>
                 <h1 class="termin-header 2020">2020</h1>
-                <!-- Termin -->
+
+                <div class="termin aktuell 2021 2020">
+                    <div class="titel">
+                        <h1>Derzeit gibt es leider keine Termine.</h1>
+                    </div>
+                </div>   
+<!--                 
                 <div class="termin aktuell 2021">
                     <div class="datum">
                         <div class="tag">31.</div>
@@ -75,70 +83,7 @@
                     <div class="flex-break"></div>
                     <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
                 </div>   
-
-                <!-- Termin -->
-                <div class="termin aktuell 2021">
-                    <div class="datum">
-                        <div class='tag'>1.</div>
-                        <div class='monat'>2.</div>
-                        <div class='jahr'>2021</div>
-                    </div>
-                    <div class="titel">
-                        <h1>Kinderfasching</h1>
-                        <p>13:45 vor der Volksschule</p>
-                    </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onclick="toggleBeschreibung(1)">
-                    <div class="flex-break"></div>
-                    <div class="termin-beschreibung">Die Musikkapelle wird den Faschinugsumzug anführen. Verkleidungen sind erwünscht!</div>
-                </div> 
-
-                <!-- Termin -->
-                <div class="termin aktuell 2021">
-                    <div class="datum">
-                        <div class="tag">20.</div>
-                        <div class="monat">1.</div>
-                        <div class="jahr">2021</div>
-                    </div>
-                    <div class="titel">
-                        <h1>Jahreshauptversammlung</h1>
-                        <p>17:00 Gasthaus Puckmayr Pucking</p>
-                    </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onclick="toggleBeschreibung(2)">
-                    <div class="flex-break"></div>
-                    <div class="termin-beschreibung">Am Sonntag den 20. Jänner findet die Jahreshauptversammlung mit Weihnachtsfeier statt. Speisen und Getränke werden von der Musikkapelle übernommen.</div>
-                </div>  
-                
-                <!-- Termin -->
-                <div class="termin 2020">
-                    <div class="datum">
-                        <div class="tag">31.</div>
-                        <div class="monat">12.</div>
-                        <div class="jahr">2020</div>
-                    </div>
-                    <div class="titel">
-                        <h1>Prototype Termin</h1>
-                        <p>24:00 Ort des Termins</p>
-                    </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onclick="toggleBeschreibung(3)">
-                    <div class="flex-break"></div>
-                    <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
-                </div>  
-
-                <!-- Termin -->
-                <div class="termin 2020">
-                    <div class="datum">
-                        <div class="tag">1.</div>
-                        <div class="monat">1.</div>
-                        <div class="jahr">2020</div>
-                    </div>
-                    <div class="titel">
-                        <h1>Prototype Termin</h1>
-                        <p>24:00 Ort des Termins</p>
-                    </div>
-                    <img src="../prototypes/images/rechter-pfeil.png" class="termin-dropdown" onclick="toggleBeschreibung(4)">
-                    <div class="flex-break"></div>
-                    <div class="termin-beschreibung">Eine kurze Beschreibung des Termins</div>
-                </div>  
+--> 
             </div>
 
         </div>

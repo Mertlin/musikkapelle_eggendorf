@@ -68,34 +68,40 @@ function back() {
         toHideBar[i].classList.add("hidden");
     }
 
-    /* Nur für beitraege und termine benötigt */
-    var toHideContent = document.querySelectorAll('.beitrag, .termin, .category-header, .termin-header');
-    for( i = 0; i < toHideContent.length;i++){
-        toHideContent[i].style.display = 'none';
+    /* Beitraege & Termine  */
+    var toHideBT = document.querySelectorAll('.beitrag, .termin, .category-header, .termin-header');
+    for( i = 0; i < toHideBT.length;i++){
+        toHideBT[i].style.display = 'none';
     }
-    var toShowContent = document.getElementsByClassName('aktuell');
-    for( i = 0; i < toShowContent.length;i++){
-        if (toShowContent[i].classList.contains('termin')) {
-            toShowContent[i].style.display = 'flex';
+    var toShowBT = document.getElementsByClassName('aktuell');
+    for( i = 0; i < toShowBT.length;i++){
+        if (toShowBT[i].classList.contains('termin')) {
+            toShowBT[i].style.display = 'flex';
         } else {
-            toShowContent[i].style.display = 'block';
+            toShowBT[i].style.display = 'block';
         }
     }
 
-    /* Nur für Mitglieder */
+    /* Mitglieder */
     var toShowHeader = document.getElementsByClassName('mitglied-header');
     var toShowPhoto = document.getElementsByClassName('mitglied');
-
     for( i = 0; i < toShowHeader.length; i++){
         toShowHeader[i].style.display = 'flex';
     }
-
     for( i = 0; i < toShowPhoto.length; i++){
         toShowPhoto[i].style.display = 'flex';
     }
 
+    /* Gallery */
+    var toHideGallery = document.querySelectorAll('.gallery-header, .gallery-entry-img');
+    for( i = 0; i < toHide.length;i++){
+        toHideGallery[i].style.display = 'none';
+    }
+    var toShowGallery = document.getElementsByClassName('show');
+    for( i = 0; i < toShow.length;i++){
+        toShowGallery[i].style.display = 'flex';
+    }
 }
-
 
 /* Needed for when maximizing window with closed sidebar */
 var x = window.matchMedia('(min-width: 1300px)');

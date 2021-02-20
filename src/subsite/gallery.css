@@ -10,7 +10,7 @@
 #gallery-wrapper{
     display: flex;
     flex-flow: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }  
 
 .gallery-container{
@@ -134,19 +134,11 @@
         justify-content: flex-start;
     }
 
-} 
-
-@media screen and (max-width: 1000px) {
-    #gallery-wrapper{ 
-        flex-direction: column;
-        align-content: space-around;
-    }
-
     .gallery-container{
-        width: 90%;
+        width: 95%;
     }
-}
 
+} 
 
 @media screen and (max-width: 600px) {
     

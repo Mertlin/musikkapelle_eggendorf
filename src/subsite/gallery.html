@@ -27,7 +27,7 @@
                 <div id="nav-links-wrapper">
                     <a href="../index.html"><div class="nav-links">Home</div></a>
                     <a href="gallery.html"><div class="nav-links active">Galerie</div></a>
-                    <a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>
+                    <!--<a href="jugendarbeit.html"><div class="nav-links">Jugendarbeit</div></a>-->
                     <a href="mitglieder.html"><div class="nav-links">Mitglieder</div></a>
                     <a href="termine.html"><div class="nav-links">Termine</div></a>
                     <a href="beitraege/beitraege.html"><div class="nav-links">Beiträge</div></a>
@@ -46,18 +46,28 @@
             </div>
         </nav>
         <div id="content">
+            <!-- Adding a Picture guide:
+                    [0. Add Sidebar-Entry for year of event]
+                    1. Add Sidebar-Sub with onclick event. Like:
+                        <div class="sidebar-entry sidebar-sub hidden YEAR" onclick="selectEvent('YEAR','NAME')">NAME</div>
+                    2. Add Image like:
+                        <div class="gallery-entry-img YEAR NAME show"> 
+                            <img src="../subsite/images/references/NAME/PICTURE" alt="alternative-text when picture is not shown" onclick="currentSlide(Number of picture of event)"> 
+                        </div>
+            -->
+
             <!--SIDEBAR-->
             <div id="sidebar">
                 <div class="sidebar-fold">
-                    <div class="sidebar-fold-entry">Sidebar</div>
+                    <div class="sidebar-fold-entry">Navigation</div>
                     <img id="sidebar-fold-arrow" src="../prototypes/images/rechter-pfeil.png" alt="Sidebar Foldout" onclick="toggleSidebarFold()"/>
                 </div>
-                <img id="se-back" src="../prototypes/images/cancel.png" alt="X to cancel selection" onclick="back()">
+                <img id="se-back" src="../prototypes/images/cancel.png" alt="X to cancel selection" onclick="back()"/>
                 <div class="sidebar-entry 2020" onclick="select('2020')">2020</div>
                 <div class="sidebar-entry 2019" onclick="select('2019')">2019</div>
                 <div class="sidebar-entry 2018" onclick="select('2018')">2018</div>
+                <div class="sidebar-entry sidebar-sub hidden 2020" onclick="selectEvent('2020','Herbstblasen')">Herbstblasen</div>
                 <div class="sidebar-entry sidebar-sub hidden 2019" onclick="selectEvent('2019','Maiblasen')">Maiblasen</div>
-                <div class="sidebar-entry sidebar-sub hidden 2018" onclick="selectEvent('2018','Herbstblasen')">Herbstblasen</div>
             </div> 
 
             <!--PHOTOS-->
@@ -74,16 +84,16 @@
                 </div>
                 <div id="gallery-wrapper">
 
-                    <h1 class="gallery-header" id="2018 Herbstblasen" style="display: flex;">Herbstblasen 2018</h1>
+                    <h1 class="gallery-header" id="2020 Herbstblasen" style="display: flex;">Herbstblasen 2020</h1>
                     <h1 class="gallery-header" id="2019 Maiblasen" >Maiblasen 2019</h1>
 
-                    <div class="gallery-entry-img 2018 Herbstblasen show"> 
+                    <div class="gallery-entry-img 2020 Herbstblasen show"> 
                         <img src="../subsite/images/references/Herbstblasen/HB1-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(1)"> 
                     </div>
-                    <div class="gallery-entry-img 2018 Herbstblasen show"> 
+                    <div class="gallery-entry-img 2020 Herbstblasen show"> 
                         <img src="../subsite/images/references/Herbstblasen/HB2-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(2)"> 
                     </div>
-                    <div class="gallery-entry-img 2018 Herbstblasen show"> 
+                    <div class="gallery-entry-img 2020 Herbstblasen show"> 
                         <img src="../subsite/images/references/Herbstblasen/HB3-klein.jpg" alt="Showcase Image für Artikel zu Placeholder" onclick="currentSlide(3)"> 
                     </div>
                     <div class="gallery-entry-img 2019 Maiblasen">    
